@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleur de Café - Contact Us</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background: #fdfdfd;
+      color: #333;
+    }
+        header {
+    position: relative;
+    padding: 30px 40px;
+    background-color: #fffaf9;
+    text-align: center;
+}
+
+        h1 {
+            color: #d64545;
+            font-style: italic;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header p {
+            color: #5d7a32;
+            font-size: 18px;
+        }
+                header img {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            height: 80px;
+        }
+
+
+    .section {
+      text-align: center;
+      width: 80%;
+       margin: auto;
+    }
+    .strawberry {
+            display: inline-block;
+            width: 140px;
+            height: 160px;
+            background-color: #d64545;
+            margin: 20px;
+            border-radius: 50%;
+            line-height: 160px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+            text-align: center;
+
+            /* Motion */
+            transition: 0.3s;
+        }
+
+        /* Leaf */
+        .strawberry:before {
+            content: "🍃";
+            position: absolute;
+            top: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+            text-align: center;
+        }
+
+        /* Hover animation */
+        .strawberry:hover {
+            background-color: #f25c5c;
+            transform: translateY(-10px) rotate(3deg);
+        }
+
+    .container2 {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .contact-info, .contact-form {
+      margin-bottom: 2rem;
+    }
+    .contact-info h2, .contact-form h2 {
+      color:  #d64545;
+    }
+    .contact-info p {
+      line-height: 1.6;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background:  #d64545;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background:  #ac3030;
+    }
+    footer {
+      background:  #fffaf0;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    footer img {
+      max-height: 60px;
+      display: block;
+      margin: 0 auto 0.5rem auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo in header -->
+     <img src="images/logo.jpg">
+     <h1>Fleur de Café</h1>
+    <p>A little piece of berry heaven.</p>
+  </header>
+  <div class="section">
+        <a href="Index.html" class="strawberry">Home</a>
+        <a href="about.html" class="strawberry">About Us</a>
+        <a href="menu.html" class="strawberry">Menu</a>
+        <a href="contact.html" class="strawberry">Contact</a>
+    </div>
+
+  <div class="container2">
+    <!-- Contact Information -->
+    <section class="contact-info">
+      <h2>Our Details</h2>
+      <p><strong>Address:</strong> ConceptX ,21 Paw San Mhwe Street, Yangon, Myanmar</p>
+      <p><strong>Phone:</strong> +95 123 456 789</p>
+      <p><strong>Email:</strong> Blob@fleurdecafe.com</p>
+      <p><strong>Opening Hours:</strong> Mon–Sat: 8:00 AM – 8:00 PM</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="mailto:blob@fleurdecafe.com" method="post" enctype="text/plain">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <!-- Logo in footer -->
+    <img src="images/logo.jpg" alt="Fleur de Café Logo">
+    <p>&copy; Fleur de Café. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart - Fleur de Café</title>
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #fffaf9;
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            color: #d64545;
+        }
+
+        .cart-container {
+            width: 500px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Using a list to replace the JS-generated div items */
+        .cart-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px dashed #eee;
+            padding-bottom: 8px;
+        }
+
+        /* Mimicking the look of the buttons */
+        .btn-remove {
+            background-color: #eee;
+            color: #666;
+            text-decoration: none;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn-main {
+            background-color: #d64545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 90%;
+            font-size: 16px;
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .btn-main:hover {
+            background-color: #f25c5c;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d64545;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+            text-decoration: underline;
+            display: inline-block;
+        }
+
+        input, select {
+            padding: 10px;
+            width: 90%;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 20px 0;
+            color: #d64545;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #eee;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Your Cart 🍓</h1>
+
+<div class="cart-container">
+    <div class="cart-list">
+        <div class="item">
+            <span>Cappuccino - $6</span>
+            <a href="#" class="btn-remove">Remove</a>
+        </div>
+    </div>
+
+    <div class="total">
+        Total: $6
+    </div>
+
+    <hr>
+
+    <h3>Payment Details</h3>
+
+    <!-- Using a standard HTML Form -->
+    <form action="menu.html" method="GET">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+        <select name="paymentMethod">
+            <option>Credit Card</option>
+            <option>Cash on Pickup</option>
+            <option>KBZ Pay</option>
+        </select>
+
+        <button type="submit" class="btn-main">Pay Now</button>
+    </form>
+
+    <a href="menu.html" class="btn-secondary">Back to Menu 🍰</a>
+</div>
+
+</body>
+</html>

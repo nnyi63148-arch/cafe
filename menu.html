@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fleur de Café | Menu</title>
+
+<style>
+body {
+    font-family: Georgia, serif;
+    background-color: #fffaf9;
+    margin: 0;
+}
+
+/* Header */
+                header {
+            position: relative;
+            padding: 30px 40px;
+            background-color: #fffaf9;
+            text-align: center;
+        }
+                header img {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            height: 80px;
+        }
+
+h1 {
+    color: #d64545;
+    font-style: italic;
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    color: #5d7a32;
+    font-size: 18px;
+}
+
+/* Navigation strawberries */
+.container {
+    text-align: center;
+}
+
+.strawberry {
+    display: inline-block;
+    width: 140px;
+    height: 160px;
+    background-color: #d64545;
+    margin: 20px;
+    border-radius: 50%;
+    line-height: 160px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+.strawberry:before {
+    content: "🍃";
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+}
+
+.strawberry:hover {
+    background-color: #f25c5c;
+    transform: translateY(-8px);
+}
+
+/* Section titles */
+.menu-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.menu-section h2 {
+    color: #d64545;
+    font-size: 30px;
+}
+
+/* Grid layout */
+.menu-grid {
+    width: 85%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.item-name {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price {
+    color: #5d7a32;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+select {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Purchase button */
+.cart-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #5d7a32;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.cart-btn:hover {
+    background-color: #7da942;
+}
+
+/* Floating cart */
+.floating-cart {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #d64545;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.floating-cart a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+
+       footer {
+            padding: 20px;
+            color: #5d7a32;
+            text-align: center;
+        }
+</style>
+</head>
+
+<body>
+
+<!-- Floating Cart -->
+<div class="floating-cart">
+    <a href="cart.html">🛒</a>
+</div>
+
+<header>
+    <img src="images/logo.jpg" alt="Fler de Cafe logo">
+    <h1>Fleur de Café</h1>
+    <p>A little piece of berry heaven.</p>
+</header>
+
+<div class="container">
+    <a href="Index.html" class="strawberry">Home</a>
+    <a href="about.html" class="strawberry">About Us</a>
+    <a href="menu.html" class="strawberry">Menu</a>
+    <a href="contact.html" class="strawberry">Contact</a>
+</div>
+<!-- Café & Hot Drinks -->
+<div class="menu-section">
+<h2>Café & Hot Drinks</h2>
+<div class="menu-grid">
+<div class="card"><img src="images/espresso.jpg"><div class="item-name">Espresso</div><div class="price">$5</div><select><option>Single</option><option>Double</option></select><br><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Cappuccino.jpg"><div class="item-name">Cappuccino</div><div class="price">$6</div><select><option>Small</option><option>Medium</option><option>Large</option></select><br><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/latte.jpg"><div class="item-name">Latte</div><div class="price">$6</div><select><option>Vanilla</option><option>Caramel</option></select><br><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/hot choco.jpg"><div class="item-name">Hot Chocolate</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/americano.jpg"><div class="item-name">Americano</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Mocha.jpg"><div class="item-name">Mocha</div><div class="price">$6<br><a href="cart.html" class="cart-btn">Purchase</a></div>
+</div>
+</div>
+
+<!-- Pastries -->
+<div class="menu-section">
+<h2>Pastries</h2>
+<div class="menu-grid">
+<div class="card"><img src="images/Palmier.jpg"><div class="item-name">Palmier</div><div class="price">$4</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Pain au Chocolat.jpg"><div class="item-name">Pain au Chocolat</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Croissant.jpg"><div class="item-name">Croissant</div><div class="price">$4</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Strawberry Mille-Feuille.jpg"><div class="item-name">Strawberry Mille-Feuille</div><div class="price">$6</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Éclair.jpg"><div class="item-name">Vanilla Éclair</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Raspberry Danish.jpg"><div class="item-name">Raspberry Danish</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+</div>
+</div>
+
+<!-- Desserts -->
+<div class="menu-section">
+<h2>Desserts</h2>
+<div class="menu-grid">
+<div class="card"><img src="images/tiramisu.jpg"><div class="item-name">Tiramisu</div><div class="price">$7</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/chocolate lava.jpg"><div class="item-name">Chocolate Lava Cake</div><div class="price">$7</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/strawberrycheese.jpg"><div class="item-name">Strawberry Cheesecake</div><div class="price">$7</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/cremebrulee.jpg"><div class="item-name">Crème Brûlée</div><div class="price">$6</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/matcha mousse.jpg"><div class="item-name">Matcha Mousse</div><div class="price">$6</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/PannaCotta.jpg"><div class="item-name">Panna Cotta</div><div class="price">$6</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+</div>
+</div>
+<!-- Take-Out Snacks -->
+<div class="menu-section">
+<h2>Take-Out Snacks</h2>
+<div class="menu-grid">
+<div class="card"><img src="images/GranolaBar.jpg"><div class="item-name">Granola Bar</div><div class="price">$3</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Chocolatechip.jpg"><div class="item-name">Chocolate Chip Cookies</div><div class="price">$4</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/BaguetteSandwich.jpg"><div class="item-name">Baguette Sandwich</div><div class="price">$6</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/FruitCup.jpg"><div class="item-name">Fruit Cup</div><div class="price">$4</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Macaron.jpg"><div class="item-name">Macaron Box</div><div class="price">$10</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/Yogurt.jpg"><div class="item-name">Yogurt & Granola</div><div class="price">$5</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+</div>
+</div>
+
+<!-- Customizable Bakes -->
+<div class="menu-section">
+<h2>Customizable Bakes</h2>
+<div class="menu-grid">
+<div class="card"><img src="images/Cake.jpg"><div class="item-name">Celebration Cake</div><div class="price">$35+</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/cupcake.jpg"><div class="item-name">Mini Cupcake Box</div><div class="price">$15</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/numbercake.jpg"><div class="item-name">Number or Letter Cake</div><div class="price">$40+</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/brownie.jpg"><div class="item-name">Custom Brownie Tray</div><div class="price">$20</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/cookie.jpg"><div class="item-name">Cookie Decorating Set</div><div class="price">$18</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+<div class="card"><img src="images/bento.jpg"><div class="item-name">Floral Theme Bento Cake</div><div class="price">$22</div><a href="cart.html" class="cart-btn">Purchase</a></div>
+</div>
+</div>
+    <footer>
+        © Fleur de Café
+    </footer>
+</body>
+</html>

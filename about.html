@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - Fleur de Café</title>
+    <style>
+        body {
+            background-color: #fffaf0;
+            font-family: Georgia, serif;
+            text-align: center;
+            margin: 0;
+        }
+
+                header {
+            position: relative;
+            padding: 30px 40px;
+            background-color: #fffaf9;
+            text-align: center;
+        }
+                header img {
+            position: absolute;
+            top: 20px;
+            left: 40px;
+            height: 80px;
+        }
+
+        h1 {
+            color: #d64545;
+            font-style: italic;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header p {
+            color: #5d7a32;
+            font-size: 18px;
+        }
+              .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Strawberry button */
+        .strawberry {
+            display: inline-block;
+            width: 140px;
+            height: 160px;
+            background-color: #d64545;
+            margin: 20px;
+            border-radius: 50%;
+            line-height: 160px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+
+            /* Motion */
+            transition: 0.3s;
+        }
+
+        /* Leaf */
+        .strawberry:before {
+            content: "🍃";
+            position: absolute;
+            top: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+        }
+
+        /* Hover animation */
+        .strawberry:hover {
+            background-color: #f25c5c;
+            transform: translateY(-10px) rotate(3deg);
+        }
+
+        .content {
+            width: 70%;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .content {
+            width: 70%;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .content h2 {
+            color: #d64545;
+        }
+
+        .content p {
+            color: #444;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #5d7a32;
+        }
+        video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.jpg" alt="Fleur de cafe logo">
+        <h1>Fleur de Café</h1>
+        <p>A little piece of berry heaven.</p>
+    </header>
+    <div class="container">
+        <a href="Index.html" class="strawberry">Home</a>
+        <a href="about.html" class="strawberry">About Us</a>
+        <a href="menu.html" class="strawberry">Menu</a>
+        <a href="contact.html" class="strawberry">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>About Us</h2>
+        <p>
+            Fleur de Café was created by the founder Corey with her fellas Nio and Zenith (co-owners) with love for coffee and sweet delights. 
+            Our café is inspired by fresh strawberries, soft florals, and cozy afternoons.
+        </p>
+        <p>
+            We carefully select our coffee beans and bake our pastries fresh daily 
+            to give you the perfect balance of flavor and comfort.
+        </p>
+        <p>
+            Whether you're meeting friends, studying, or simply relaxing, 
+            Fleur de Café is your sweet escape.
+        </p>
+         <video  controls loop>
+ 
+            <source src="videos/6.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
+
+    </div>
+
+
+    <footer>
+       <p> © Fleur de Café </p>
+    </footer>
+
+</body>
+</html>

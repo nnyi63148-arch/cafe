@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fleur de Café</title>
+    <style>
+        body {
+            background-color: #fffaf0;
+            font-family: Georgia, serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+    position: relative;
+    padding: 30px 40px;
+    background-color: #fffaf9;
+    text-align: center;
+}
+
+        h1 {
+            color: #d64545;
+            font-style: italic;
+            font-size: 40px;
+            margin: 0;
+        }
+
+        header p {
+            color: #5d7a32;
+            font-size: 18px;
+        }
+
+        header img {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 80px;
+}
+
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+
+        /* Strawberry button */
+        .strawberry {
+            display: inline-block;
+            width: 140px;
+            height: 160px;
+            background-color: #d64545;
+            margin: 20px;
+            border-radius: 50%;
+            line-height: 160px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            position: relative;
+
+            /* Motion */
+            transition: 0.3s;
+        }
+
+        /* Leaf */
+        .strawberry:before {
+            content: "🍃";
+            position: absolute;
+            top: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 28px;
+        }
+
+        /* Hover animation */
+        .strawberry:hover {
+            background-color: #f25c5c;
+            transform: translateY(-10px) rotate(3deg);
+        }
+
+        .content {
+            width: 70%;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #5d7a32;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/Logo.jpg" alt="Fleur de cafe logo">
+        <h1>Fleur de Café</h1>
+        <p>A little piece of berry heaven.</p>
+    </header>
+
+    <div class="container">
+        <a href="Index.html" class="strawberry">Home</a>
+        <a href="about.html" class="strawberry">About Us</a>
+        <a href="menu.html" class="strawberry">Menu</a>
+        <a href="contact.html" class="strawberry">Contact</a>
+    </div>
+
+    <div class="content">
+        <h2>Welcome</h2>
+        <p>Welcome to Fleur de Café. Enjoy sweet moments with coffee and desserts.</p>
+        <img src="images/download (3).jpg" height="300" width="800">
+    </div>
+
+    <footer>
+        © Fleur de Café
+    </footer>
+
+</body>
+</html>
